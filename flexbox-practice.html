@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .one{
+            display: flex;
+            height: 50vh;
+        }
+        .part{
+            flex-grow: 1;
+        }
+        .left-part{
+            background-color: rgb(189, 194, 129);
+        }
+        .right-part{
+            background-color: rgb(12, 114, 114);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right-text{
+            width: 300px;
+        }
+        .second{
+            display: flex;
+            width: 950px;
+            margin: auto;
+            margin-top: -100px;
+            justify-content: space-between;
+        }
+        .second-part{
+            width: 280px;
+            background-color: rgb(197, 195, 189);
+            text-align: center;
+            padding: 20px 30px;
+            box-shadow: 0 0 20px rgb(81, 182, 94);
+            border-radius: 10px;
+        }
+        .third{
+            width: 950px;
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+        }
+        .third-part{
+            width: 500px;
+            text-align: center;
+        }
+        .fourth{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fourth-part{
+            width: 450px;
+            padding: 0 20px;
+        }
+        .fourth-img{
+            width: 450px;
+        }
+        .fifth{
+            flex-direction: row-reverse;
+        }
+        .fifth-text{
+            text-align: right;
+        }
+        @media screen and (max-width:480px){
+            .one,.second,.third,.fourth,.fifth{
+                flex-direction: column;
+            }
+            .second{
+                align-items: center;
+            }
+            section,div{
+                max-width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="one">
+        <div class="part left-part"></div>
+        <div class="part right-part">
+            <div class="right-text">
+                <h1>This is right text.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores dignissimos delectus sit doloremque animi cum nobis distinctio quaerat odio excepturi laboriosam, ea labore harum debitis quo ut, libero cumque aperiam.</p>
+            </div>
+        </div>
+    </section>
+    <section class="second">
+        <div class="second-part">
+            <h1>This is second part</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, doloremque. Iure alias placeat sapiente tenetur natus magni earum perferendis beatae exercitationem corporis libero, ipsum aspernatur dolores cumque commodi. Sed, officia!</p>
+        </div>
+        <div class="second-part">
+            <h1>This is second part</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, doloremque. Iure alias placeat sapiente tenetur natus magni earum perferendis beatae exercitationem corporis libero, ipsum aspernatur dolores cumque commodi. Sed, officia!</p>
+        </div>
+        <div class="second-part">
+            <h1>This is second part</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, doloremque. Iure alias placeat sapiente tenetur natus magni earum perferendis beatae exercitationem corporis libero, ipsum aspernatur dolores cumque commodi. Sed, officia!</p>
+        </div>
+                
+
+            
+    </section>
+    <section class="third">
+        <div class="third-part">
+            <h1>This is third part</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error tenetur, sapiente similique odit consequuntur! Ab ipsam delectus deserunt dolor, quae ut ipsum recusandae voluptatum corporis minus labore dicta veritatis!</p>
+        </div>
+    </section>
+    <section class="fourth">
+        <img src="./images/img1.svg" class="fourth-img" alt="">
+        <div class="fourth-part">
+            <h1>This is fourth part.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi maxime eius, nihil dicta placeat blanditiis nostrum doloremque, perspiciatis obcaecati doloribus quia ipsum delectus, et dignissimos cumque at nemo! Odio?</p>
+        </div>
+    </section>
+    <section class="fourth fifth">
+        <img src="./images/img1.svg" class="fourth-img" alt="">
+        <div class="fourth-part fifth-text">
+            <h1>This is fifth part.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi maxime eius, nihil dicta placeat blanditiis nostrum doloremque, perspiciatis obcaecati doloribus quia ipsum delectus, et dignissimos cumque at nemo! Odio?</p>
+        </div>
+    </section>
+</body>
+</html>
